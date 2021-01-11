@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+<h1> And our random card is: </h1>
+<h2 id ="Display">No card picked yet! </h2>
+<button onclick = "selectRandomCard"> Pick a random card</button>
+  </body>
+
+  <script>
+var deck = []
+
+var twoOfSpades{
+    value: 2,
+    suit: "spades",
+}
+var fourOfClubs{
+    value: 4
+    suit: "clubs",
+}
+var sevenOfDiamons{
+    value: 7
+    suit: "diamonds",
+}
+var nineOfHearts{
+    value: 9
+    suit: "hearts",
+}
+var selectRandomCard = () =>{
+     var rand = Math.random()
+      var larger = rand * 3
+      var randomIndex = Math.round(larger)
+
+      var randomCard = deck[randomIndex]
+      var displayString = randomCard.value + "of" + randomCard.suit
+      document.getElementById("display").innerHTML = displayString
+}
+  </script>
+
+</html>
